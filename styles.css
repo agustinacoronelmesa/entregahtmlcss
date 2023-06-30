@@ -394,6 +394,7 @@ p {
     align-items: center;
     gap: 20px;
     flex-direction: column;
+    width: 100%;
 }
 
 .contactanos-title  {
@@ -407,21 +408,52 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
 .lista-de-contactos {
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
     flex: 1 1 50%;
+    width: 100%;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactos-redes {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.nuestrasredes {
+    margin-bottom: 30px;
+}
+.cajaderedes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    font-size: 20px;
+    gap:40px;
+}
+.cajasdeicono {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajasdeicono img {
+    width: 70px;
+    height: 70px;
 }
 .contactos-redes h3 {
     color: var(--secondary);
-    font-weight: 350;
+    font-weight: 200;
 }
 .contactos-redes ul {
     display: flex;
@@ -442,11 +474,27 @@ p {
     justify-content: center;
 }
 
+.locationicon {
+    width: 70px;
+    height: 70px;
+}
+.locationdescrip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
 .contacto-ubicacion {
     flex: 1;
-    flex: 1 1 50%;
+    flex: 30%;
 }
-
+.dondenosubicamos{
+    margin-bottom: 4;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 .contacto-ubicacion h3 {
     font-weight: 350;
     color: var(--secondary);
@@ -475,24 +523,26 @@ p {
 footer {
     display: flex;
     background-color: var(--secondary);
-    height: 20%;
+    height: 250px;
     bottom: 0;
+    justify-content: space-between;
 }
 
 /* footer  logo */
 .footer-logo {
-    flex-direction: column;
-    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 520px;
 }
 .footer-logo img {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
 }
 
 .contenedor-contacto {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: left;
     width: 50%;
     flex-direction: column;
 }

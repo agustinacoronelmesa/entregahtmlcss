@@ -25,7 +25,7 @@
                 <label for="menu-toggle" class="menu-label">
                     <img src="./Assets/hamburguesa.png" alt="menu-burger" class="menu-icon">
                 </label>
-                <input type="checkbox" id="menu-toggle"/>
+                <input type="checkbox" id="menu-toggle">
                 <ul class="navbar-list">
                     <li><a class="servicios1" href="#servicios">Servicios</a></li>                    
                     <li><a class="sobre-nosotros1" href="#about-us">Sobre nosotros</a></li>
@@ -38,7 +38,7 @@
             <section class="contenedor-hero">
                 <article class="contenedor-presentacion">
                 <div class="contenedor-titulo">
-                    <span><b>OTHILA PUBLICITY ®</b></span>
+                    <span class="span-titulo"><b>OTHILA PUBLICITY ®</b></span>
                 </div>
                 <div class="caja-uno">
                     <p class="descripcion">
@@ -117,46 +117,40 @@
                         <div class="info-de-contacto">
                         <div class="lista-de-contactos">
                             <div class="contactos-redes">
-                                <h3>Nuestras redes sociales</h3>
-                                <ul>
-                                    <li><a href="#"><img src="./Assets/igicon.png" alt="igicon" class="iconoscont"></a> @OthilaMKT</li>
-                                    <li><a href="#"><img src="./Assets/wspicon.png" alt="wspicon" class="iconoscont"></a> 1166927914</li>
-                                    <li><a href="#"><img src="./Assets/fbicon.png" alt="fbicon" class="iconoscont"></a> Othila Marketing</li>
-                                    <li><a href="#"><img src="./Assets/twicon.png" alt="twicon" class="iconoscont"></a> @OthilaMKT</li>
-                                </ul>
+                                <h3 class="nuestrasredes"><b>Nuestras redes sociales</b></h3>
+                                <div class="cajaderedes">
+                                    <div class="cajasdeicono"><a href="#"><img src="./Assets/igicon.png" alt="igicon" class="iconoscont"></a> @OthilaMKT</div>
+                                    <div class="cajasdeicono"><a href="#"><img src="./Assets/wspicon.png" alt="wspicon" class="iconoscont"></a> 1166927914</div>
+                                    <div class="cajasdeicono"><a href="#"><img src="./Assets/fbicon.png" alt="fbicon" class="iconoscont"></a> Othila Marketing</div>
+                                    <div class="cajasdeicono"><a href="#"><img src="./Assets/twicon.png" alt="twicon" class="iconoscont"></a> @OthilaMKT</div>
+                                </div>
                             </div>
                             <div class="contacto-ubicacion">
-                                <h3>Dónde nos ubicamos</h3>
-                                <ul>
-                                    <li><a href="#"><img src="./Assets/ubicon.png" alt="ubicon" class="iconoscont"></a> Av. Pte. J. D. Perón 665, Muñiz, San Miguel</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class="contacto-ubicacion-mapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1953.976027588456!2d-58.70420879167872!3d-34.54892487133169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd07f8fa54a5%3A0x828dc60c31d3b9f0!2sASG%2C%20Av.%20Pte.%20J.%20D.%20Per%C3%B3n%20665%2C%20B1662%20Mu%C3%B1iz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1687937912824!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-                        </div>
+                                <h3 class="dondenosubicamos"><b>Dónde nos ubicamos</b></h3>
+                                <div class="locationdescrip">
+                                    <img src="./assets/ubicon.png" alt="ubicon" class="locationicon">
+                                    <h3 class="dire"> Av. Pte. J. D. Perón 665, Muñiz, San Miguel</h3>
+                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1953.976027588456!2d-58.70420879167872!3d-34.54892487133169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd07f8fa54a5%3A0x828dc60c31d3b9f0!2sASG%2C%20Av.%20Pte.%20J.%20D.%20Per%C3%B3n%20665%2C%20B1662%20Mu%C3%B1iz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1687937912824!5m2!1ses-419!2sar" class="map" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                            </div>
                         </div>                   
                     </div>
                 </section>
             </section>
             <br>
         </main>
-    <!-- footer  -->
+        <!-- footer  -->
         <footer id="contact" > 
             <!-- logo footer -->
-            <section class="footer-logo">
-                <img src="./Assets/othila.svg" alt="footer-logo" class="footer-logo">
-            </section> 
+                <img src="./Assets/othila.svg" alt="footer-logo" class="footer-logo"> 
             <!-- contacto -->
             <section class="contenedor-contacto">
-                <article>
-                    <div class="contact-logos-in-footer">
-                        <a href="#"target="_blank"><img src="./Assets/igicon.png" alt="logo de instagram" class="instagram-icon"></a>
-                        <a href="#"target="_blank"><img src="./Assets/wspicon.png" alt="logo de whatsapp" class="wsp-icon"></a>
-                        <a href="#"target="_blank"><img src="./Assets/fbicon.png" alt="logo de facebook" class="facebook-icon"></a>
-                        <a href="#"target="_blank"><img src="./Assets/twicon.png" alt="logo de twitter" class="twitter-icon"></a>
-                    </div>
-                </article>
+                <div class="contact-logos-in-footer">
+                    <a href="#"target="_blank"><img src="./Assets/igicon.png" alt="logo de instagram" class="instagram-icon"></a>
+                    <a href="#"target="_blank"><img src="./Assets/wspicon.png" alt="logo de whatsapp" class="wsp-icon"></a>
+                    <a href="#"target="_blank"><img src="./Assets/fbicon.png" alt="logo de facebook" class="facebook-icon"></a>
+                    <a href="#"target="_blank"><img src="./Assets/twicon.png" alt="logo de twitter" class="twitter-icon"></a>
+                </div>
             </section>
         </footer>
     </body>

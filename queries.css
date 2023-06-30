@@ -1,10 +1,77 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap"); :root {
+    --primary: white;
+    --secondary: black;
+    --aux1:#664495;
+    --aux2:#E64858;
+    --aux3:#F49726;
+    --aux4: rgb(243, 231, 57); 
+}
 /* DESKTOP FIRST */
+
+@media (max-width: 1266px) {
+    .footer-logo {
+        margin-left: 355px;
+    }
+    .leads h3 {
+        margin:3%;
+    }
+    .span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1101px) {
+    .footer-logo {
+        margin-left: 250px;
+    }
+    .caja-dos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+        align-items: center;
+    }
+    .about-us {
+        margin-top: 50%;
+    }
+}
+@media (max-width:1020px) {
+.contenedor-contacto {
+    flex-direction: column;
+}
+}
+
 
 /* Pantallas grandes (tablets o PC's pequeñas) */
 
-@media (max-width: 992px) {
+@media (max-width: 996px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 992px;
+        max-width: 100%;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+.header {
+    justify-content: center;
+    gap:70%;
+}
 .contenedor-hero {
     width: 75%;
+    margin-top: 40px;
+    padding-top: 40px;
+    height: 500px;
+}
+.contenedor-cards{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 1600px;
+    width: 100%;
 }
 .contenedor-presentacion {
     width: 65%;
@@ -14,7 +81,34 @@
     margin left: none;
 }
 .navbar-list {
-    display: block;
+    position: absolute;
+    top: 90px;
+    left: -28px;
+    right: 10%;
+    width: 80%;
+    height: 210px;
+    flex-direction: column;
+    background:var(--secondary);
+    border-top: none;
+    border-radius: 0px 0px 15px 15px;
+    align-items: center;
+    padding: 45px 35px;
+    gap: 45px;
+    color: var(--aux3);
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+    border: var(--aux1) 2px solid;
+    border-top: none;
+    transform: none;
+    transition: none;
+}
+
+.span {
+    animation: ;
+}
+.servicios1, .sobre-nosotros1, .contacto1 {
+    color: var(--aux3);
 }
 .logo-principal img {
 height: 300px;
@@ -26,7 +120,7 @@ height: 300px;
 }
 .menu-label img {
     height: 50px;
-    width: 55px
+    width: 50px;
 }
 #menu-toggle:checked+.navbar-list {
     display: flex;
@@ -39,26 +133,46 @@ height: 300px;
     width: 15px;
     height: 15px;
 }
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-datos {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.descripcion-services {
+    margin-bottom: 45px;
+}
 .about-title {
     font-size: 30px;
+    text-align: center;
 }
-.about-me p {
-    font-size: 20px;
-}
-.adventages {
-    font-size: 30px;
-}
-.descripcion-adventages {
-    font-size: 20px;
-}
+
+
 .cont-cards {
-    justify-content: space-between;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1400px;
+    width: 70%;
+    margin-bottom: 5%;
 }
-.caja-dos {
-    flex-direction: column;
-    gap: 25px;
-}
+
+
 .form-contact {
     margin-top: 760px;
     flex-direction: column;
@@ -69,13 +183,39 @@ height: 300px;
     margin-right: 145px;
 }
 .contact-logos-in-footer-title h2 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
+.navbar {
+    gap: none;
 }
 
-/* Pantallas medianas (tablets y celulares en horizontal de 768px x 576px) */
-@media (max-width: 768px) {
+.footer-logo {
+    margin-left: 15px;
+}
+
+/* arreglo en 831 */
+@media (max-width:831px) {
+.contact-logos-in-footer {
+    gap: 0px;
+}
+}
+
+/* arreglo en 795 */
+@media (max-width:795px) {
+.contenedor-logo-principal {
+    display: none;
+}
+.about-us {
+    margin-top: 10%;
+}
+}
+/* Pantallas medianas (tablets y celulares en horizontal hasta 576px) */
+@media (max-width: 771px) {
+
+.header {
+    gap: 40%;
+}
 .contenedor-hero {
     width: 75%;
     flex-direction: column-reverse;
@@ -93,28 +233,21 @@ height: 300px;
 .logo-principal img {
 height: 200px;
 }
+
+.about-us {
+    margin-top: 30%;
+}
 .about-title {
     font-size: 25px;
 }
     
-.about-me p {
-    font-size: 20px;
-    text-align: justify;
-}
-.adventages {
-    font-size: 25px;
-}
-.descripcion-adventages {
-    font-size: 20px;
-    text-align: justify;
-}
 .cont-cards {
     justify-content: space-between;
     flex-direction: column;
 }
 .caja-dos {
     flex-direction: column;
-    gap: 25px;
+    margin-top: 80%;
 }
 .form-contact {
     margin-top: 800px;
@@ -122,36 +255,63 @@ height: 200px;
     gap: 22px;
 }
 .contenedor-contacto {
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     margin-right: 185px;
 }
 .contact-logos-in-footer-title h2 {
     font-size: 30px;
 }
+
+.cajaderedes {
+    gap:0px;
 }
 
+.footer-logo {
+    width: 200px;
+    margin-top: none;
+    margin-left: 20px;
+}
+.instagram-icon, .wsp-icon, .facebook-icon, .twitter-icon {
+    width: 85px;
+    height: 85px;
+}
+.caja-marcas {
+    flex-direction: column;
+    width: 42%;
+    height: 600px;
+    padding: 15px;
+}
 /* Pantallas pequeñas (celulares de 576px a 320px como mínimo) */
 @media (max-width: 576px) {
+
 .header {
-    padding: none;
+    gap: 30px;
+}
+.logo  {
+width: 45px;
+}
+.menu-label img{
+    width: 40px;
+    height: 40px;
 }
 .navbar-list {
-    gap:5px;
-    padding-inline-start: 5px;
+    gap:52px;
 }
-.navbar-list a {
-    padding: 0px 5px;
-    font-size: 20px;
+
+.span-titulo {
+    font-size: 26px;
 }
+
 .contenedor-hero {
     flex-direction: column-reverse;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 5%;
 }
 .contenedor-presentacion {
-    width: 80%;
+    width: 113%;
 }
 .contenedor-titulo {
     width: 80%;
@@ -160,10 +320,9 @@ height: 200px;
 .caja-uno {
     width: 80%;
 }
-.contenedor-titulo h1 {
-    font-size: 25px;
-    margin-left: none;
-    margin-right: 60px;
+.visibilidad, .leads, .brand {
+    padding-top: 5%;
+    width: 86%
 }
 .caja-uno {
     width: 400px;
@@ -171,41 +330,81 @@ height: 200px;
 .logo-principal {
 display: none;
 }
-.about-title {
+.h2, .contactanos-title, .services{
     font-size: 25px;
 }
-.about-me {
-    width: 350px;
+.about-us {
+    margin-top: 210%;
 }
-.about-me p {
-    font-size: 20px;
-    text-align: justify;
+
+.descripcion-services {
+    margin-bottom: 330px;
 }
-.adventages {
-font-size: 25px;
+.descripcion, .descripcion-services, .about-us p, .marcas p, .contactanos1 p{
+    font-size: 15px;
 }
-.descripcion-adventages {
-    font-size: 20px;
-    text-align: justify;
+.descripcion {
+    width: 48%;
 }
 .cont-cards {
     justify-content: space-between;
     flex-direction: column;
 }
+
 .caja-dos {
     flex-direction: column;
-    gap: 25px;
+    gap: 55px;
+    margin-top: 120%;
+}
+.caja-dos img {
+    height: 62px;
+
+}
+
+.instagram-icon, .wsp-icon, .facebook-icon, .twitter-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.lista-de-contactos {
+    flex-direction: column;
+    gap: 30px;
+}
+.map {
+    display: none;
 }
 .form-contact {
     margin-top: 1900px;
     flex-direction: column;
     gap: 22px;
 }
+.contenedor-boton {
+    flex-direction: column;
+}
 .contenedor-contacto {
     margin-bottom: 20px;
-    margin-right: 185px;
+    margin-right: 13px;
     align-items: center;
 }
-.contact-logos-in-footer-title h2 {
+.contact-logos-in-footer {
+    gap: 0px;
+    padding-left: 0px;
+}
+.dondenosubicamos .nuestrasredes{
     font-size: 20px;
+}
+.cajasdeicono,.dire {
+    font-size: 15px;
+}
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+.caja-marcas img {
+    width: 65px;
+    height: 65px;
+}
+.footer-logo {
+
+}
 }
