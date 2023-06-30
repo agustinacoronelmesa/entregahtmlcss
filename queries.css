@@ -1,0 +1,211 @@
+/* DESKTOP FIRST */
+
+/* Pantallas grandes (tablets o PC's pequeñas) */
+
+@media (max-width: 992px) {
+.contenedor-hero {
+    width: 75%;
+}
+.contenedor-presentacion {
+    width: 65%;
+}
+.contenedor-titulo h1 {
+    font-size: 35px;
+    margin left: none;
+}
+.navbar-list {
+    display: block;
+}
+.logo-principal img {
+height: 300px;
+}
+.menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+}
+.menu-label img {
+    height: 50px;
+    width: 55px
+}
+#menu-toggle:checked+.navbar-list {
+    display: flex;
+}
+.menu-icon,
+.logo {
+    z-index: 3;
+}
+.menu-icon {
+    width: 15px;
+    height: 15px;
+}
+.about-title {
+    font-size: 30px;
+}
+.about-me p {
+    font-size: 20px;
+}
+.adventages {
+    font-size: 30px;
+}
+.descripcion-adventages {
+    font-size: 20px;
+}
+.cont-cards {
+    justify-content: space-between;
+    flex-direction: column;
+}
+.caja-dos {
+    flex-direction: column;
+    gap: 25px;
+}
+.form-contact {
+    margin-top: 760px;
+    flex-direction: column;
+    gap: 22px;
+}
+.contenedor-contacto {
+    margin-bottom: 20px;
+    margin-right: 145px;
+}
+.contact-logos-in-footer-title h2 {
+    font-size: 30px;
+}
+
+}
+
+/* Pantallas medianas (tablets y celulares en horizontal de 768px x 576px) */
+@media (max-width: 768px) {
+.contenedor-hero {
+    width: 75%;
+    flex-direction: column-reverse;
+}
+.contenedor-presentacion {
+    width: 65%;
+}
+.contenedor-titulo h1 {
+    font-size: 25px;
+    margin-left: none;
+}
+.caja-uno {
+    width: 400px;
+}
+.logo-principal img {
+height: 200px;
+}
+.about-title {
+    font-size: 25px;
+}
+    
+.about-me p {
+    font-size: 20px;
+    text-align: justify;
+}
+.adventages {
+    font-size: 25px;
+}
+.descripcion-adventages {
+    font-size: 20px;
+    text-align: justify;
+}
+.cont-cards {
+    justify-content: space-between;
+    flex-direction: column;
+}
+.caja-dos {
+    flex-direction: column;
+    gap: 25px;
+}
+.form-contact {
+    margin-top: 800px;
+    flex-direction: column;
+    gap: 22px;
+}
+.contenedor-contacto {
+    margin-bottom: 20px;
+    margin-right: 185px;
+}
+.contact-logos-in-footer-title h2 {
+    font-size: 30px;
+}
+}
+
+/* Pantallas pequeñas (celulares de 576px a 320px como mínimo) */
+@media (max-width: 576px) {
+.header {
+    padding: none;
+}
+.navbar-list {
+    gap:5px;
+    padding-inline-start: 5px;
+}
+.navbar-list a {
+    padding: 0px 5px;
+    font-size: 20px;
+}
+.contenedor-hero {
+    flex-direction: column-reverse;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-presentacion {
+    width: 80%;
+}
+.contenedor-titulo {
+    width: 80%;
+}
+
+.caja-uno {
+    width: 80%;
+}
+.contenedor-titulo h1 {
+    font-size: 25px;
+    margin-left: none;
+    margin-right: 60px;
+}
+.caja-uno {
+    width: 400px;
+}
+.logo-principal {
+display: none;
+}
+.about-title {
+    font-size: 25px;
+}
+.about-me {
+    width: 350px;
+}
+.about-me p {
+    font-size: 20px;
+    text-align: justify;
+}
+.adventages {
+font-size: 25px;
+}
+.descripcion-adventages {
+    font-size: 20px;
+    text-align: justify;
+}
+.cont-cards {
+    justify-content: space-between;
+    flex-direction: column;
+}
+.caja-dos {
+    flex-direction: column;
+    gap: 25px;
+}
+.form-contact {
+    margin-top: 1900px;
+    flex-direction: column;
+    gap: 22px;
+}
+.contenedor-contacto {
+    margin-bottom: 20px;
+    margin-right: 185px;
+    align-items: center;
+}
+.contact-logos-in-footer-title h2 {
+    font-size: 20px;
+}

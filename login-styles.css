@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap"); :root {
+    --primary: white;
+    --secondary: black;
+    --aux1:#664495;
+    --aux2:#E64858;
+    --aux3:#F49726;
+    --aux4: rgb(243, 231, 57); 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'syne';
+}
+
+main {
+    width: 100%;
+    background: -webkit-linear-gradient(#664495, #E64858, #F49726);
+    display: flex;
+    min-height: 100vh;
+}
+
+.formulario {
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 30px;
+    border: var(--secondary) 3px solid;
+    background: var(--primary);
+}
+
+.contenedor-formulario {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cajas-formulario input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: var(--primary);
+    border: #F49726 solid 2px;
+}
+
+.cajas-formulario label {
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.boton-ingresar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.boton-ingresar label {
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background: #FFC0CB;
+    color: white;
+}
+
+.boton {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 15px;
+    color: var(--secondary);
+}
+
+a:hover {
+    color: blue;
+}
+
+.forgot-password {
+    font-size: 15px;
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.registrate{
+    color:var(--secondary);
+    text-decoration: underline;
+}

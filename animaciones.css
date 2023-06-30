@@ -1,0 +1,113 @@
+/* ANIMACIONES EN TITULO */
+span {
+    background: linear-gradient(#664495, #E64858, #F49726, #f0cb35);
+    -webkit-background-clip: text;
+    color: transparent; 
+    display: block;
+    font-size: 40px;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+    
+    @keyFrames typing {
+    
+    from { width: 0}
+    }
+    
+    @keyFrames blink {
+    50% { border-color: transparent}
+    }
+
+/* ANIMACIONES EN BOTONES */
+.boton {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #c02425 0%, #f0cb35 75%);
+}
+.boton:hover {
+    background-position: right center;
+}
+.boton:active {
+    top: 2px;
+}
+
+
+/* ANIMACIONES EN NAV */
+
+.navbar-list li .sobre-nosotros1::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--aux1);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.15s ease;
+}
+
+.navbar-list li .servicios1:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+
+.navbar-list li .servicios1::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--aux2);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.15s ease;
+}
+
+.navbar-list li .sobre-nosotros1:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.navbar-list li .contacto1::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--aux3);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.15s ease;
+}
+
+.navbar-list li .contacto1:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+/* ANIMACION DE LAS MARCAS */
+.marcas img:hover {
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+}
